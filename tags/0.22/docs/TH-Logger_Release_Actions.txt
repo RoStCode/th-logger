@@ -1,0 +1,14 @@
+1. Window Apperance - Allt ska vara avbockat förutom:
+   
+   'Window has titlebar' 
+   'AutoCenter'
+   'Minimize'
+
+2. Ändra 'SP_VIor_EXE/LLB' knappen i 'TH_StartParameters.vi' till rätt läge.
+   
+   Make current value default.
+
+3. Bygg en .EXE fil.
+
+4. Se till att ´PATH´ innehåller ´C:\Program Files\Winzip´ så att CLI fungerar med backup.
+ 

@@ -1,10 +1,12 @@
 General
 -------
-* (Done!) 800*600 screen resolution that looks good.
+* The program should use a screen resolution of 1024x768.
 * General logfile writer that can be used from any VI module.
 * The startparameters should be taken from some sort of .INI file.
 * Buttons for temp and humidity in "utvärdering".
 * Default button for all graphs.
+
+* (Done!) 800*600 screen resolution that looks good.
 * (Done!) Backup of measured data with simple dialogs.
 
 HygroWin
@@ -13,6 +15,7 @@ HygroWin
 * Rapportera 'NaN' om ingen data har kommit in på ~5 sekunder.
 * Läs CRC siffran och kontrollera om den är rätt eller fel.
 * Simulation of transducer.
+
 * (Done!) Read_rs232.vi kan komma i osynk pga. att 21 tecken alltid läses in.
 
 NH485

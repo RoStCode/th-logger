@@ -1,0 +1,22 @@
+Konton:
+* administratör
+* operatör
+
+Ta bort:
+* Fast user switching
+* Security center.
+* Ta bort allt onödigt från desktopen.
+* Skärmsläckare och power save.
+* Ta bort "fade" effekten.
+* Välj "classic" startmeny.
+
+Installera:
+* Power toys tweakui, konfigurera automatisk login.
+
+TH-Logger:
+* Hela datamappen ska kunna läsas från operatörskontot.
+* Genväg till datamappen på skrivbordet.
+
+Annat:
+* Datorn ska gå igång vid spänningstillslag.
+* Automatisk login.

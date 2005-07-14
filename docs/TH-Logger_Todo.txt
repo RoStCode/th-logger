@@ -6,6 +6,8 @@ General
 * Buttons for temp and humidity in "utvärdering".
 * Default button for all graphs.
 
+* (Done!) TH-Logger.log should be placed in the root folder instead of the data folder.
+* (Done!) The revision number should be shown in the logfile.
 * (Done!) 800*600 screen resolution that looks good.
 * (Done!) Backup of measured data with simple dialogs.
 

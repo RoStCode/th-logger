@@ -29,6 +29,8 @@ General
 * Lägg till en dialog som visar vilka ini parametrar som är inlästa.
 * Bladmögel ska vara valbart utifrån inifilen.
 * Kopieringsskydd via USB-dongle.
+* Alla error cluster ska kunna inkluderas i logfilen.
+* Ta bort zip backup eller byt till freeware.
 
 * (Done!) TH-Logger.log should be placed in the root folder instead of the data folder.
 * (Done!) The revision number should be shown in the logfile.

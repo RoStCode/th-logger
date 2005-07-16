@@ -1,10 +1,34 @@
+Docs
+----
+* Skriv en bruksanvisning till TH-Logger programmet.
+
+Logfile
+-------
+* General logfile writer that can be used from any VI module.
+* Registrera strömavbrott i logfilen.
+
+Graphs
+------
+* Default button for all graphs.
+* Buttons for temp and humidity in "utvärdering".
+* Läs in och uppdatera 24 timmars grafer vid programstart.
+
+Print
+-----
+* Byt från svart till vit bakgrund vid uskrift.
+
+Inifile
+-------
+* Komplett felhantering när en INI fil inte finns eller tags saknas.
+* (Done!) The startparameters should be taken from some sort of .INI file.
+
 General
 -------
+* Revision ska hämtas från ett ställe i programmet.
 * The program should use a screen resolution of 1024x768.
-* General logfile writer that can be used from any VI module.
-* The startparameters should be taken from some sort of .INI file.
-* Buttons for temp and humidity in "utvärdering".
-* Default button for all graphs.
+* Lägg till en dialog som visar vilka ini parametrar som är inlästa.
+* Bladmögel ska vara valbart utifrån inifilen.
+* Kopieringsskydd via USB-dongle.
 
 * (Done!) TH-Logger.log should be placed in the root folder instead of the data folder.
 * (Done!) The revision number should be shown in the logfile.
@@ -25,3 +49,7 @@ NH485
 * Internal error detection with 7 characters instead of 8.
 * Läs CRC siffran och kontrollera om den är rätt eller fel.
 * Simulation of transducer.
+
+Internt i programmet
+--------------------
+* Städa upp och lägg mycket från main panelen i subrutiner.

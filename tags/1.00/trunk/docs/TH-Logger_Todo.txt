@@ -1,0 +1,65 @@
+Docs
+----
+* Skriv en bruksanvisning till TH-Logger programmet.
+
+Logfile
+-------
+* General logfile writer that can be used from any VI module.
+* Registrera strömavbrott i logfilen.
+
+Graphs
+------
+* Default button for all graphs.
+* Buttons for temp and humidity in "utvärdering".
+* Läs in och uppdatera 24 timmars grafer vid programstart.
+* Det tar längre och längre tid att byta till en 24 timmars flik. 4 sek är uppmätt.
+* Utvärderingen bör fylla på med NaN då det saknas data i de sparade filerna. Detta är
+  för att undvika att det blir streck mellan punkter i grafen.
+
+* (Done!) När man har gjort endast en NaN mätning så kommer 24 timmars felaktigt också att visa NaN.
+
+Print
+-----
+* Byt från svart till vit bakgrund vid utskrift.
+
+Inifile
+-------
+* Komplett felhantering när en INI fil inte finns eller tags saknas.
+* (Done!) The startparameters should be taken from some sort of .INI file.
+
+General
+-------
+* En developer flik som man kan få fram när som helst.
+* Revision ska hämtas från ett ställe i programmet.
+* The program should use a screen resolution of 1024x768.
+* Lägg till en dialog som visar vilka ini parametrar som är inlästa.
+* Kopieringsskydd via USB-dongle.
+* Alla error cluster ska kunna inkluderas i logfilen.
+* Ta bort zip backup eller byt till freeware.
+* Ta bort minnesläcka. 37MB efter 3-4 dagar från starten då det var 24MB.
+* Alla värden för bladmögel ska kunna sparas i en datafil.
+
+* (Done!) Bladmögel ska vara valbart utifrån inifilen.
+* (Done!) TH-Logger.log should be placed in the root folder instead of the data folder.
+* (Done!) The revision number should be shown in the logfile.
+* (Done!) 800*600 screen resolution that looks good.
+* (Done!) Backup of measured data with simple dialogs.
+
+HygroWin
+--------
+* Göra om rutinerna till GOOP standard.
+* Läs CRC siffran och kontrollera om den är rätt eller fel.
+* Simulation of transducer.
+
+* (Done!) Rapportera 'NaN' om ingen data har kommit in på 10 sekunder.
+* (Done!) Read_rs232.vi kan komma i osynk pga. att 21 tecken alltid läses in.
+
+NH485
+-----
+* Internal error detection with 7 characters instead of 8.
+* Läs CRC siffran och kontrollera om den är rätt eller fel.
+* Simulation of transducer.
+
+Internt i programmet
+--------------------
+* Städa upp och lägg mycket från main panelen i subrutiner.

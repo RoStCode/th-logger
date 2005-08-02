@@ -1,0 +1,31 @@
+050730 - RS485 mätningar
+------------------------
+Alla mätningar är gjorda från A eller B till SGND som är matnings minus.
+
+Moxa TCC-100i modulen gillar inte termineringar då den endast skickar ut en spänning från 0 till 5V
+och inte -5V till 5V. Med terminering så innebär detta att nollan inte riktigt nås då
+bitarna inte får 90 graders flanker.
+
+---
+Vpp mätningar mellan A och SGND
+Unloaded:	3.8V	(Moxa)
+		3.05V	(NH-485)
+120ohm:		2.16V	(Moxa)
+		1.38V	(NH-485)
+60ohm:		1.78V	(Moxa)
+		0.96V	(NH-485)
+1kohm:		2.79V	(Moxa)
+		1.93V	(NH-485)
+500ohm		2.63V	(Moxa)
+		1.78V	(NH-485)
+
+------
+* 32st enheter på en RS485 lina ger en last på 375ohm.
+* Termineringar behövs ej om reflektionen är borta innan en mätning mitt på biten görs.
+* När linan är "idle" ska lina B vara minst 200mV mer positiv än lina A. Kan fixas med bias
+  resistorer.
+
+------
+TCC-100i impedans:	12 kohm
+NH485 impedans:		7 kohm
+Last med en TCC-100i och 3st NH485: 1953 ohm	

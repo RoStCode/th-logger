@@ -1,6 +1,10 @@
-0.23 xxxxxx
+1.01 051009
 -----------
-* 
+* All graphs printed now has a white background instead of black.
+
+1.00 050802
+-----------
+* Released to the first customer on öland.  
 
 0.22 020323
 -----------

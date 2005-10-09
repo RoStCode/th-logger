@@ -15,12 +15,13 @@ Graphs
 * Det tar längre och längre tid att byta till en 24 timmars flik. 4 sek är uppmätt.
 * Utvärderingen bör fylla på med NaN då det saknas data i de sparade filerna. Detta är
   för att undvika att det blir streck mellan punkter i grafen.
+* När mätdata saknas så kommer ändå utvärderingsgrafen att uppdateras tom.
 
 * (Done!) När man har gjort endast en NaN mätning så kommer 24 timmars felaktigt också att visa NaN.
 
 Print
 -----
-* Byt från svart till vit bakgrund vid utskrift.
+* (Done!) Byt från svart till vit bakgrund vid utskrift.
 
 Inifile
 -------

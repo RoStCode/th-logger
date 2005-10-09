@@ -1,0 +1,67 @@
+1.01 051009
+-----------
+* All graphs printed now has a white background instead of black.
+
+1.00 050802
+-----------
+* Released to the first customer on öland.  
+
+0.22 020323
+-----------
+* The year 2002 is now the default year in "utvärdering". 
+* Built in support for backup using the Winzip Command Line interface.
+  The WinZip program path must be defined in ´path´ variable in the Autoexec.bat file.
+* The whole program is now done for a screen resolution of 800x600.
+
+0.21 020313
+-----------
+* The Hygrowin transducer now has a better startup that can not go wrong.
+* The Hygrowin transducer now displays 'NaN' if a ports fails to open. This is also logged to file.
+* If no HygroWin transducer data has been recevied in 10 seconds, the program
+  registers a 'NaN' value.
+
+0.20 020312
+-----------
+* Implemented the NH485 transmitter as an GOOP object.
+
+0.19 011216
+-----------
+* Installed in the Jonsson onion warehouse.
+* Same version as 0.18.
+
+0.18 011118
+-----------
+* Changed the relay control box to something simpler after Niclas visit.
+
+0.17 011107
+-----------
+* Installed in the Jonsson onion warehouse.
+* Started design on the "relästyrning".
+
+0.16 011028
+-----------
+* Everything in "händelselogg" is now logged to screen AND file.
+* The Comport routines now got a better error handler. 
+* "Bladmögelvarning" is now logged.
+* Avererge is now selectable. "Dynamisk", "6 timmar" and "24 timmar".
+
+0.15 011020
+-----------
+* Installed in the Jonssons onion warehouse.
+* Averge of the charts now works in "utvärdering".
+
+0.14 011014
+-----------
+* Important events can now be logged on screen (and to disk in the future).
+* The button "Avsluta" now works.
+* Fixed bug with mixed up temperature and humidity plots in "Utvärdering".
+
+0.13 011014
+-----------
+* Installed in the Jonssons onion warehouse.
+* Nicer front panel with different colors.
+* The function "Utvärdering" now works.
+
+0.12 010916
+-----------
+* Installed in the Jonssons onion warehouse.

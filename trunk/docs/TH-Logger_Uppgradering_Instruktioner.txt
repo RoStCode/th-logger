@@ -1,0 +1,12 @@
+Uppgradering av TH-Logger
+-------------------------
+
+1. Avsluta TH-Logger programmet genom att trycka på knappen "Avsluta" och svara "Ja" på frågan om du är säker på att avsluta. 
+
+2. Öppna mappen C:\TH-Logger.
+
+3. Byt namn på den gamla filen TH-Logger.exe till TH-Logger.exe_1.00 eller liknande. Genom att döpa om programfilen kan man om man vill alltid återgå till den gamla versionen.
+
+4. Kopiera in den nya programfilen TH-Logger.exe i mappen C:\TH-Logger.
+
+5. Starta den nya versionen av programmet TH-Logger genom att dubbelklicka på TH-Logger.exe filen i mappen C:\TH-Logger.

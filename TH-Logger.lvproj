@@ -232,11 +232,8 @@
             <Item Name="Generate Report Delete.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/NIReport.llb/Generate Report Delete.vi"/>
          </Item>
          <Item Name="lvanlys.dll" Type="Document" URL="/C/Program Files/National Instruments/LabVIEW 8.5/resource/lvanlys.dll"/>
-         <Item Name="systemexec" Type="VI" URL="systemexec"/>
-         <Item Name="goopsup" Type="VI" URL="goopsup"/>
          <Item Name="Advapi32.dll" Type="Document" URL="Advapi32.dll"/>
          <Item Name="kernel32.dll" Type="Document" URL="kernel32.dll"/>
-         <Item Name="RegOpen" Type="VI" URL="RegOpen"/>
       </Item>
       <Item Name="Build Specifications" Type="Build">
          <Item Name="TH-Logger Executable" Type="EXE">
@@ -300,42 +297,40 @@
             <Property Name="SourceCount" Type="Int">5</Property>
          </Item>
          <Item Name="TH-Logger Installer" Type="Installer">
-            <Property Name="arpCompany" Type="Str">-</Property>
+            <Property Name="arpCompany" Type="Str">Follinge Krongård</Property>
             <Property Name="arpContact" Type="Str">Roine Stenberg</Property>
+            <Property Name="arpURL" Type="Str">http://www.follinge.se</Property>
             <Property Name="Author" Type="Str"></Property>
             <Property Name="BuildLabel" Type="Str">TH-Logger Installer</Property>
             <Property Name="BuildLocation" Type="Path">../../bin/installer/1.10</Property>
             <Property Name="DirInfo.Count" Type="Int">3</Property>
-            <Property Name="DirInfo.DefaultDir" Type="Str">{1F1E6C22-030F-4332-9ACB-08F6C1001FB4}</Property>
+            <Property Name="DirInfo.DefaultDir" Type="Str">{3EE50746-64C6-4C1B-BE9C-919D71A4CC68}</Property>
             <Property Name="DirInfo[0].DirName" Type="Str">TH-Logger</Property>
-            <Property Name="DirInfo[0].DirTag" Type="Str">{1F1E6C22-030F-4332-9ACB-08F6C1001FB4}</Property>
-            <Property Name="DirInfo[0].ParentTag" Type="Str">{115F5F59-DED6-42E2-8467-4CD042208C47}</Property>
-            <Property Name="DirInfo[1].DirName" Type="Str">support</Property>
-            <Property Name="DirInfo[1].DirTag" Type="Str">{5D15A687-0DF8-4D5C-93A0-9DEB1C692F98}</Property>
-            <Property Name="DirInfo[1].ParentTag" Type="Str">{1F1E6C22-030F-4332-9ACB-08F6C1001FB4}</Property>
-            <Property Name="DirInfo[2].DirName" Type="Str">data</Property>
-            <Property Name="DirInfo[2].DirTag" Type="Str">{A641AAD7-5B45-44AF-AD93-BAA742BFF77F}</Property>
-            <Property Name="DirInfo[2].ParentTag" Type="Str">{1F1E6C22-030F-4332-9ACB-08F6C1001FB4}</Property>
+            <Property Name="DirInfo[0].DirTag" Type="Str">{3EE50746-64C6-4C1B-BE9C-919D71A4CC68}</Property>
+            <Property Name="DirInfo[0].ParentTag" Type="Str">{3912416A-D2E5-411B-AFEE-B63654D690C0}</Property>
+            <Property Name="DirInfo[1].DirName" Type="Str">data</Property>
+            <Property Name="DirInfo[1].DirTag" Type="Str">{9F7DE621-E0DB-4825-BEAE-405C553B3EAC}</Property>
+            <Property Name="DirInfo[1].ParentTag" Type="Str">{3EE50746-64C6-4C1B-BE9C-919D71A4CC68}</Property>
+            <Property Name="DirInfo[2].DirName" Type="Str">support</Property>
+            <Property Name="DirInfo[2].DirTag" Type="Str">{BCF1FDD6-84A4-48B3-962D-D42E49533FA9}</Property>
+            <Property Name="DirInfo[2].ParentTag" Type="Str">{3EE50746-64C6-4C1B-BE9C-919D71A4CC68}</Property>
             <Property Name="DistID" Type="Str">{632A19B4-D781-426E-AFCE-A39113735841}</Property>
             <Property Name="DistParts.Count" Type="Int">1</Property>
             <Property Name="DistPartsInfo[0].FlavorID" Type="Str">DefaultFull</Property>
             <Property Name="DistPartsInfo[0].ProductID" Type="Str">{299B4500-C41F-4BA3-AB4A-CC9412E16D67}</Property>
             <Property Name="DistPartsInfo[0].ProductName" Type="Str">NI LabVIEW Run-Time Engine 8.5</Property>
             <Property Name="DistPartsInfo[0].UpgradeCode" Type="Str">{99D796C3-2E53-4839-A25B-22C26B029103}</Property>
-            <Property Name="FileInfo.Count" Type="Int">3</Property>
-            <Property Name="FileInfo[0].DirTag" Type="Str">{1F1E6C22-030F-4332-9ACB-08F6C1001FB4}</Property>
+            <Property Name="FileInfo.Count" Type="Int">2</Property>
+            <Property Name="FileInfo[0].DirTag" Type="Str">{3EE50746-64C6-4C1B-BE9C-919D71A4CC68}</Property>
             <Property Name="FileInfo[0].FileName" Type="Str">TH-Logger.exe</Property>
             <Property Name="FileInfo[0].FileTag" Type="Str">{BA0A6CC0-0AC0-4E2A-B844-3B42C4633924}</Property>
             <Property Name="FileInfo[0].Type" Type="Int">3</Property>
             <Property Name="FileInfo[0].TypeID" Type="Ref">/My Computer/Build Specifications/TH-Logger Executable</Property>
-            <Property Name="FileInfo[1].DirTag" Type="Str">{1F1E6C22-030F-4332-9ACB-08F6C1001FB4}</Property>
+            <Property Name="FileInfo[1].DirTag" Type="Str">{3EE50746-64C6-4C1B-BE9C-919D71A4CC68}</Property>
             <Property Name="FileInfo[1].FileName" Type="Str">TH-Logger.aliases</Property>
             <Property Name="FileInfo[1].FileTag" Type="Str">{BB18C41A-FB36-4E1F-B6F5-D89D3B0A655E}</Property>
             <Property Name="FileInfo[1].Type" Type="Int">3</Property>
             <Property Name="FileInfo[1].TypeID" Type="Ref">/My Computer/Build Specifications/TH-Logger Executable</Property>
-            <Property Name="FileInfo[2].Attributes" Type="Int">1</Property>
-            <Property Name="FileInfo[2].DirTag" Type="Str">{A641AAD7-5B45-44AF-AD93-BAA742BFF77F}</Property>
-            <Property Name="FileInfo[2].FileTag" Type="Ref">/My Computer/data/readme.txt</Property>
             <Property Name="IncludeError" Type="Bool">false</Property>
             <Property Name="InstSpecVersion" Type="Str">8508002</Property>
             <Property Name="LicenseFile" Type="Ref"></Property>
@@ -347,14 +342,15 @@
             <Property Name="ShortcutInfo.Count" Type="Int">2</Property>
             <Property Name="ShortcutInfo[0].DirTag" Type="Str">{B9E310F1-839C-48B7-8CAE-33000780C26E}</Property>
             <Property Name="ShortcutInfo[0].FileTag" Type="Str">{BA0A6CC0-0AC0-4E2A-B844-3B42C4633924}</Property>
-            <Property Name="ShortcutInfo[0].FileTagDir" Type="Str">{1F1E6C22-030F-4332-9ACB-08F6C1001FB4}</Property>
+            <Property Name="ShortcutInfo[0].FileTagDir" Type="Str">{3EE50746-64C6-4C1B-BE9C-919D71A4CC68}</Property>
             <Property Name="ShortcutInfo[0].Name" Type="Str">TH-Logger</Property>
             <Property Name="ShortcutInfo[0].SubDir" Type="Str">TH-Logger</Property>
             <Property Name="ShortcutInfo[1].DirTag" Type="Str">{5B6504E1-93DC-4CDA-9066-00343512D4F8}</Property>
             <Property Name="ShortcutInfo[1].FileTag" Type="Str">{BA0A6CC0-0AC0-4E2A-B844-3B42C4633924}</Property>
-            <Property Name="ShortcutInfo[1].FileTagDir" Type="Str">{1F1E6C22-030F-4332-9ACB-08F6C1001FB4}</Property>
+            <Property Name="ShortcutInfo[1].FileTagDir" Type="Str">{3EE50746-64C6-4C1B-BE9C-919D71A4CC68}</Property>
             <Property Name="ShortcutInfo[1].Name" Type="Str">TH-Logger</Property>
             <Property Name="UpgradeCode" Type="Str">{84716563-DD78-4714-90B8-C3F92E2631E6}</Property>
+            <Property Name="WindowTitle" Type="Str">Installation of TH-Logger</Property>
          </Item>
       </Item>
    </Item>

@@ -10,19 +10,14 @@
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
-		<Item Name="builds" Type="Folder"/>
-		<Item Name="Dynamic VIs" Type="Folder"/>
-		<Item Name="source" Type="Folder">
-			<Item Name="data" Type="Folder">
-				<Item Name="readme.txt" Type="Document" URL="../../source/data/readme.txt"/>
-			</Item>
+		<Item Name="data" Type="Folder">
+			<Item Name="readme.txt" Type="Document" URL="../../source/data/readme.txt"/>
 		</Item>
-		<Item Name="Support Files" Type="Folder">
-			<Item Name="TH-Logger.ini" Type="Document" URL="../../source/TH-Logger.ini"/>
+		<Item Name="python" Type="Folder">
+			<Item Name="tdtool.py" Type="Document" URL="../../source/python/tdtool.py"/>
 		</Item>
-		<Item Name="Top Level VIs" Type="Folder">
-			<Item Name="TH_Main.vi" Type="VI" URL="../../source/TH_Main.vi"/>
-		</Item>
+		<Item Name="TH-Logger.ini" Type="Document" URL="../../source/TH-Logger.ini"/>
+		<Item Name="TH_Main.vi" Type="VI" URL="../../source/TH_Main.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="8.6CompatibleGlobalVar.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/config.llb/8.6CompatibleGlobalVar.vi"/>
@@ -173,134 +168,65 @@
 			<Item Name="XY Chart Buffer.vi" Type="VI" URL="../../source/support_vi/XY Chart Buffer.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
-			<Item Name="Installer" Type="Installer">
-				<Property Name="Destination[0].name" Type="Str">TH-Logger</Property>
-				<Property Name="Destination[0].parent" Type="Str">{115F5F59-DED6-42E2-8467-4CD042208C47}</Property>
-				<Property Name="Destination[0].tag" Type="Str">{5C898F56-6F9B-47C6-A433-1E198B257559}</Property>
-				<Property Name="Destination[0].type" Type="Str">userFolder</Property>
-				<Property Name="Destination[1].name" Type="Str">NI_HTML</Property>
-				<Property Name="Destination[1].parent" Type="Str">{5C898F56-6F9B-47C6-A433-1E198B257559}</Property>
-				<Property Name="Destination[1].tag" Type="Str">{76A31A2C-EE6F-47B6-A38A-4EC7A4FC593A}</Property>
-				<Property Name="Destination[1].type" Type="Str">userFolder</Property>
-				<Property Name="Destination[2].name" Type="Str">NI_report</Property>
-				<Property Name="Destination[2].parent" Type="Str">{5C898F56-6F9B-47C6-A433-1E198B257559}</Property>
-				<Property Name="Destination[2].tag" Type="Str">{7997221D-0E86-4606-BEE0-3EF16589991C}</Property>
-				<Property Name="Destination[2].type" Type="Str">userFolder</Property>
-				<Property Name="Destination[3].name" Type="Str">NI_Standard Report</Property>
-				<Property Name="Destination[3].parent" Type="Str">{5C898F56-6F9B-47C6-A433-1E198B257559}</Property>
-				<Property Name="Destination[3].tag" Type="Str">{C71BD112-A61A-4554-B618-0E691A6319DE}</Property>
-				<Property Name="Destination[3].type" Type="Str">userFolder</Property>
-				<Property Name="Destination[4].name" Type="Str">support</Property>
-				<Property Name="Destination[4].parent" Type="Str">{5C898F56-6F9B-47C6-A433-1E198B257559}</Property>
-				<Property Name="Destination[4].tag" Type="Str">{29821468-ED20-41BA-8B38-74EAA7FC3ADB}</Property>
-				<Property Name="Destination[4].type" Type="Str">userFolder</Property>
-				<Property Name="Destination[5].name" Type="Str">data</Property>
-				<Property Name="Destination[5].parent" Type="Str">{5C898F56-6F9B-47C6-A433-1E198B257559}</Property>
-				<Property Name="Destination[5].tag" Type="Str">{8AD20757-7E83-4B3F-A9C6-CA1781C18555}</Property>
-				<Property Name="Destination[5].type" Type="Str">userFolder</Property>
-				<Property Name="DestinationCount" Type="Int">6</Property>
-				<Property Name="DistPart[0].flavorID" Type="Str">DefaultFull</Property>
-				<Property Name="DistPart[0].productID" Type="Str">{331B6132-FA2A-458D-828D-B0DA0237739A}</Property>
-				<Property Name="DistPart[0].productName" Type="Str">NI LabVIEW Runtime 2014 SP1 f3</Property>
-				<Property Name="DistPart[0].upgradeCode" Type="Str"></Property>
-				<Property Name="DistPartCount" Type="Int">1</Property>
-				<Property Name="INST_buildLocation" Type="Path">../builds/installer</Property>
-				<Property Name="INST_buildLocation.type" Type="Str">relativeToCommon</Property>
-				<Property Name="INST_buildSpecName" Type="Str">Installer</Property>
-				<Property Name="INST_defaultDir" Type="Str">{5C898F56-6F9B-47C6-A433-1E198B257559}</Property>
-				<Property Name="INST_includeError" Type="Bool">false</Property>
-				<Property Name="INST_productName" Type="Str">TH-Logger</Property>
-				<Property Name="INST_productVersion" Type="Str">1.0.1</Property>
-				<Property Name="InstSpecBitness" Type="Str">32-bit</Property>
-				<Property Name="InstSpecVersion" Type="Str">14018013</Property>
-				<Property Name="MSI_arpCompany" Type="Str">-</Property>
-				<Property Name="MSI_arpContact" Type="Str">Roine Stenberg</Property>
-				<Property Name="MSI_distID" Type="Str">{E0C97DEA-B4CA-45B9-A428-378859078CAB}</Property>
-				<Property Name="MSI_osCheck" Type="Int">0</Property>
-				<Property Name="MSI_upgradeCode" Type="Str">{84716563-DD78-4714-90B8-C3F92E2631E6}</Property>
-				<Property Name="RegDest[0].dirName" Type="Str">Software</Property>
-				<Property Name="RegDest[0].dirTag" Type="Str">{DDFAFC8B-E728-4AC8-96DE-B920EBB97A86}</Property>
-				<Property Name="RegDest[0].parentTag" Type="Str">2</Property>
-				<Property Name="RegDestCount" Type="Int">1</Property>
-				<Property Name="Source[0].dest" Type="Str">{5C898F56-6F9B-47C6-A433-1E198B257559}</Property>
-				<Property Name="Source[0].File[0].dest" Type="Str">{5C898F56-6F9B-47C6-A433-1E198B257559}</Property>
-				<Property Name="Source[0].File[0].name" Type="Str">TH-Logger.exe</Property>
-				<Property Name="Source[0].File[0].Shortcut[0].destIndex" Type="Int">0</Property>
-				<Property Name="Source[0].File[0].Shortcut[0].name" Type="Str">TH-Logger</Property>
-				<Property Name="Source[0].File[0].Shortcut[0].subDir" Type="Str">TH-Logger</Property>
-				<Property Name="Source[0].File[0].ShortcutCount" Type="Int">1</Property>
-				<Property Name="Source[0].File[0].tag" Type="Str">{DE9A753F-B344-4A90-BE9F-D62F38455EFA}</Property>
-				<Property Name="Source[0].FileCount" Type="Int">1</Property>
-				<Property Name="Source[0].name" Type="Str">TH-Logger</Property>
-				<Property Name="Source[0].tag" Type="Ref">/My Computer/Build Specifications/TH-Logger</Property>
-				<Property Name="Source[0].type" Type="Str">EXE</Property>
-				<Property Name="Source[1].dest" Type="Str">{8AD20757-7E83-4B3F-A9C6-CA1781C18555}</Property>
-				<Property Name="Source[1].name" Type="Str">readme.txt</Property>
-				<Property Name="Source[1].tag" Type="Ref">/My Computer/source/data/readme.txt</Property>
-				<Property Name="Source[1].type" Type="Str">File</Property>
-				<Property Name="SourceCount" Type="Int">2</Property>
-			</Item>
-			<Item Name="TH-Logger" Type="EXE">
-				<Property Name="App_INI_aliasGUID" Type="Str">{36183601-02AC-40D2-83FA-13ACB1AA5382}</Property>
-				<Property Name="App_INI_GUID" Type="Str">{863E98A6-BBCD-4F0D-8F46-C79698A36818}</Property>
-				<Property Name="Bld_buildCacheID" Type="Str">{50D41CAE-B406-4B07-B443-2C14D3992AD4}</Property>
-				<Property Name="Bld_buildSpecName" Type="Str">TH-Logger</Property>
+			<Item Name="TH-Logger Application" Type="EXE">
+				<Property Name="App_copyErrors" Type="Bool">true</Property>
+				<Property Name="App_INI_aliasGUID" Type="Str">{5222959E-7BA8-43BE-B586-958D674ABBF6}</Property>
+				<Property Name="App_INI_GUID" Type="Str">{57360B73-F3C3-4FC1-A7BB-6F67BD57F54E}</Property>
+				<Property Name="App_INI_itemID" Type="Ref">/My Computer/TH-Logger.ini</Property>
+				<Property Name="App_serverConfig.httpPort" Type="Int">8002</Property>
+				<Property Name="Bld_autoIncrement" Type="Bool">true</Property>
+				<Property Name="Bld_buildCacheID" Type="Str">{CEB95216-8E8D-40FB-9663-B80118D11574}</Property>
+				<Property Name="Bld_buildSpecName" Type="Str">TH-Logger Application</Property>
 				<Property Name="Bld_excludeInlineSubVIs" Type="Bool">true</Property>
 				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
 				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
-				<Property Name="Bld_excludeTypedefs" Type="Bool">true</Property>
-				<Property Name="Bld_localDestDir" Type="Path">../releases</Property>
-				<Property Name="Bld_previewCacheID" Type="Str">{9082891C-99B4-4C26-8517-705E180A7DCA}</Property>
-				<Property Name="Bld_targetDestDir" Type="Path"></Property>
+				<Property Name="Bld_localDestDir" Type="Path">../releases/NI_AB_PROJECTNAME</Property>
+				<Property Name="Bld_localDestDirType" Type="Str">relativeToProject</Property>
+				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
+				<Property Name="Bld_previewCacheID" Type="Str">{B986A7E3-854F-4C00-8458-C088FA5A9FC5}</Property>
+				<Property Name="Bld_version.build" Type="Int">14</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">TH-Logger.exe</Property>
-				<Property Name="Destination[0].path" Type="Path">../releases/TH-Logger.exe</Property>
+				<Property Name="Destination[0].path" Type="Path">../releases/NI_AB_PROJECTNAME/TH-Logger.exe</Property>
 				<Property Name="Destination[0].path.type" Type="Str">relativeToProject</Property>
+				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
 				<Property Name="Destination[0].type" Type="Str">App</Property>
-				<Property Name="Destination[1].destName" Type="Str">support</Property>
-				<Property Name="Destination[1].path" Type="Path">../releases/support</Property>
+				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
+				<Property Name="Destination[1].path" Type="Path">../releases/NI_AB_PROJECTNAME/support</Property>
 				<Property Name="Destination[1].path.type" Type="Str">relativeToProject</Property>
-				<Property Name="Destination[2].destName" Type="Str">releases</Property>
-				<Property Name="Destination[2].path" Type="Path">../releases</Property>
+				<Property Name="Destination[2].destName" Type="Str">data</Property>
+				<Property Name="Destination[2].path" Type="Path">../releases/NI_AB_PROJECTNAME/data</Property>
 				<Property Name="Destination[2].path.type" Type="Str">relativeToProject</Property>
-				<Property Name="DestinationCount" Type="Int">3</Property>
-				<Property Name="Exe_actXinfo_enumCLSIDsCount" Type="Int">0</Property>
-				<Property Name="Exe_actXinfo_majorVersion" Type="Int">0</Property>
-				<Property Name="Exe_actXinfo_minorVersion" Type="Int">0</Property>
-				<Property Name="Exe_actXinfo_objCLSIDsCount" Type="Int">0</Property>
-				<Property Name="Exe_actXinfo_progIDPrefix" Type="Str"></Property>
-				<Property Name="Source[0].itemID" Type="Str">{8401AEBD-D53B-46B8-8352-07BAD6672812}</Property>
+				<Property Name="Destination[3].destName" Type="Str">python</Property>
+				<Property Name="Destination[3].path" Type="Path">../releases/NI_AB_PROJECTNAME/python</Property>
+				<Property Name="Destination[3].path.type" Type="Str">relativeToProject</Property>
+				<Property Name="DestinationCount" Type="Int">4</Property>
+				<Property Name="Source[0].itemID" Type="Str">{395673C5-372C-4EFD-B6F9-5B739F64302B}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[1].itemID" Type="Ref">/My Computer/Top Level VIs/TH_Main.vi</Property>
-				<Property Name="Source[1].properties[0].type" Type="Str">Allow debugging</Property>
-				<Property Name="Source[1].properties[0].value" Type="Bool">false</Property>
-				<Property Name="Source[1].properties[1].type" Type="Str">Remove block diagram</Property>
-				<Property Name="Source[1].properties[1].value" Type="Bool">true</Property>
-				<Property Name="Source[1].properties[2].type" Type="Str">Run when opened</Property>
-				<Property Name="Source[1].properties[2].value" Type="Bool">true</Property>
-				<Property Name="Source[1].properties[3].type" Type="Str">Show Abort button</Property>
-				<Property Name="Source[1].properties[3].value" Type="Bool">false</Property>
-				<Property Name="Source[1].propertiesCount" Type="Int">4</Property>
+				<Property Name="Source[1].itemID" Type="Ref">/My Computer/TH_Main.vi</Property>
 				<Property Name="Source[1].sourceInclusion" Type="Str">TopLevel</Property>
 				<Property Name="Source[1].type" Type="Str">VI</Property>
+				<Property Name="Source[2].Container.applyDestination" Type="Bool">true</Property>
+				<Property Name="Source[2].Container.applyInclusion" Type="Bool">true</Property>
+				<Property Name="Source[2].Container.depDestIndex" Type="Int">0</Property>
 				<Property Name="Source[2].destinationIndex" Type="Int">2</Property>
-				<Property Name="Source[2].itemID" Type="Ref">/My Computer/Support Files/TH-Logger.ini</Property>
-				<Property Name="Source[2].properties[0].type" Type="Str">Allow debugging</Property>
-				<Property Name="Source[2].properties[0].value" Type="Bool">false</Property>
-				<Property Name="Source[2].properties[1].type" Type="Str">Remove block diagram</Property>
-				<Property Name="Source[2].properties[1].value" Type="Bool">true</Property>
-				<Property Name="Source[2].properties[2].type" Type="Str">Show Abort button</Property>
-				<Property Name="Source[2].properties[2].value" Type="Bool">false</Property>
-				<Property Name="Source[2].propertiesCount" Type="Int">3</Property>
+				<Property Name="Source[2].itemID" Type="Ref">/My Computer/data</Property>
 				<Property Name="Source[2].sourceInclusion" Type="Str">Include</Property>
-				<Property Name="Source[2].type" Type="Str">Source</Property>
-				<Property Name="SourceCount" Type="Int">3</Property>
-				<Property Name="TgtF_fileDescription" Type="Str">TH-Logger.exe</Property>
-				<Property Name="TgtF_internalName" Type="Str">TH-Logger.exe</Property>
-				<Property Name="TgtF_legalCopyright" Type="Str">Copyright 2016 </Property>
-				<Property Name="TgtF_productName" Type="Str">TH-Logger.exe</Property>
-				<Property Name="TgtF_targetfileGUID" Type="Str">{DE9A753F-B344-4A90-BE9F-D62F38455EFA}</Property>
+				<Property Name="Source[2].type" Type="Str">Container</Property>
+				<Property Name="Source[3].Container.applyDestination" Type="Bool">true</Property>
+				<Property Name="Source[3].Container.applyInclusion" Type="Bool">true</Property>
+				<Property Name="Source[3].Container.depDestIndex" Type="Int">0</Property>
+				<Property Name="Source[3].destinationIndex" Type="Int">3</Property>
+				<Property Name="Source[3].itemID" Type="Ref">/My Computer/python</Property>
+				<Property Name="Source[3].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="Source[3].type" Type="Str">Container</Property>
+				<Property Name="SourceCount" Type="Int">4</Property>
+				<Property Name="TgtF_fileDescription" Type="Str">TH-Logger Application</Property>
+				<Property Name="TgtF_internalName" Type="Str">TH-Logger Application</Property>
+				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2016 </Property>
+				<Property Name="TgtF_productName" Type="Str">TH-Logger Application</Property>
+				<Property Name="TgtF_targetfileGUID" Type="Str">{55B6166B-86F8-4348-8FEF-4018556EB2B8}</Property>
 				<Property Name="TgtF_targetfileName" Type="Str">TH-Logger.exe</Property>
 			</Item>
 		</Item>

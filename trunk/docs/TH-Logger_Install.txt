@@ -1,12 +1,14 @@
-Uppgradering av TH-Logger
--------------------------
+Installera och kör TH-Logger
+----------------------------
+1a. Installera "LabView Home 2014" för att exekvera från källkoden direkt (ladda TH_Main.vi).
+    https://www.labviewmakerhub.com/doku.php?id=get_labview
+1b. Installera "LabView 2014 runtime 32-bit" för att köra builds\releases\x.x.x\TH-Logger.exe.
+    http://www.ni.com/download/labview-run-time-engine-2014/4887/en/
 
+Uppgradering av TH-Logger.exe
+-----------------------------
 1. Avsluta TH-Logger programmet genom att trycka på knappen "Avsluta" och svara "Ja" på frågan om du är säker på att avsluta. 
-
 2. Öppna mappen C:\TH-Logger.
-
 3. Byt namn på den gamla filen TH-Logger.exe till TH-Logger.exe_1.00 eller liknande. Genom att döpa om programfilen kan man om man vill alltid återgå till den gamla versionen.
-
 4. Kopiera in den nya programfilen TH-Logger.exe i mappen C:\TH-Logger.
-
 5. Starta den nya versionen av programmet TH-Logger genom att dubbelklicka på TH-Logger.exe filen i mappen C:\TH-Logger.

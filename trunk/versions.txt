@@ -1,3 +1,8 @@
+2.00 170105
+-----------
+* Added support for Telldus Live sensors (see docs/TH-Logger_TelldusLive.txt).
+* Source code released as open source on GitHub.
+
 1.01 051009
 -----------
 * All graphs printed now has a white background instead of black.

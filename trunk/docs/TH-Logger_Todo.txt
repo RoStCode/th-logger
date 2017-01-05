@@ -61,6 +61,10 @@ NH485
 * Läs CRC siffran och kontrollera om den är rätt eller fel.
 * Simulation of transducer.
 
+Telldus Live
+------------
+* Färga bakgrunden på datum/tid fältet efter hur gammal temp/fukt datan är.
+
 Internt i programmet
 --------------------
 * Städa upp och lägg mycket från main panelen i subrutiner.

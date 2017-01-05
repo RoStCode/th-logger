@@ -174,7 +174,6 @@
 				<Property Name="App_INI_GUID" Type="Str">{57360B73-F3C3-4FC1-A7BB-6F67BD57F54E}</Property>
 				<Property Name="App_INI_itemID" Type="Ref">/My Computer/TH-Logger.ini</Property>
 				<Property Name="App_serverConfig.httpPort" Type="Int">8002</Property>
-				<Property Name="Bld_autoIncrement" Type="Bool">true</Property>
 				<Property Name="Bld_buildCacheID" Type="Str">{CEB95216-8E8D-40FB-9663-B80118D11574}</Property>
 				<Property Name="Bld_buildSpecName" Type="Str">TH-Logger Application</Property>
 				<Property Name="Bld_excludeInlineSubVIs" Type="Bool">true</Property>
@@ -184,8 +183,7 @@
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToProject</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{B986A7E3-854F-4C00-8458-C088FA5A9FC5}</Property>
-				<Property Name="Bld_version.build" Type="Int">14</Property>
-				<Property Name="Bld_version.major" Type="Int">1</Property>
+				<Property Name="Bld_version.major" Type="Int">2</Property>
 				<Property Name="Destination[0].destName" Type="Str">TH-Logger.exe</Property>
 				<Property Name="Destination[0].path" Type="Path">../releases/NI_AB_PROJECTNAME/TH-Logger.exe</Property>
 				<Property Name="Destination[0].path.type" Type="Str">relativeToProject</Property>
@@ -201,7 +199,7 @@
 				<Property Name="Destination[3].path" Type="Path">../releases/NI_AB_PROJECTNAME/python</Property>
 				<Property Name="Destination[3].path.type" Type="Str">relativeToProject</Property>
 				<Property Name="DestinationCount" Type="Int">4</Property>
-				<Property Name="Source[0].itemID" Type="Str">{395673C5-372C-4EFD-B6F9-5B739F64302B}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{4172E747-C3F7-4F58-BBD7-D2A1D2C604AD}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/TH_Main.vi</Property>
@@ -224,7 +222,6 @@
 				<Property Name="SourceCount" Type="Int">4</Property>
 				<Property Name="TgtF_fileDescription" Type="Str">TH-Logger Application</Property>
 				<Property Name="TgtF_internalName" Type="Str">TH-Logger Application</Property>
-				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2016 </Property>
 				<Property Name="TgtF_productName" Type="Str">TH-Logger Application</Property>
 				<Property Name="TgtF_targetfileGUID" Type="Str">{55B6166B-86F8-4348-8FEF-4018556EB2B8}</Property>
 				<Property Name="TgtF_targetfileName" Type="Str">TH-Logger.exe</Property>
@@ -291,6 +288,7 @@
 				<Property Name="INST_productVersion" Type="Str">2.0.0</Property>
 				<Property Name="InstSpecBitness" Type="Str">32-bit</Property>
 				<Property Name="InstSpecVersion" Type="Str">14018013</Property>
+				<Property Name="MSI_arpContact" Type="Str">Roine Stenberg</Property>
 				<Property Name="MSI_autoselectDrivers" Type="Bool">true</Property>
 				<Property Name="MSI_distID" Type="Str">{4440A812-5C00-4AAC-B5C0-880A4B75779B}</Property>
 				<Property Name="MSI_osCheck" Type="Int">0</Property>

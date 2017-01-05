@@ -1,0 +1,18 @@
+First, make sure to follow instructions in file docs\TH-Logger_Install.txt on how to install LabView. 
+
+Download Python 2.7.x from https://www.python.org/downloads/ and install using the default settings.
+Install the Python configobj and oauth modules from the Windows command line:
+c:\python27\python.exe -m pip install configobj oauth
+
+Get personal Telldus API keys by following the instructions at https://developer.telldus.com/blog/new-python-example-for-telldus-live
+Enter the Telldus API keys (PUBLIC_KEY and PRIVATE_KEY) in file source\python\tdtool.py.
+
+Run script from command line to get your unique sensor numbers from Telldus Live service:
+cd source\python
+c:\python27\python.exe tdtool.py --list-sensors
+
+Enter your unique sensor numbers in the source\TH-Logger.ini configuration file:
+[TelldusLive]
+DeviceId1 = xxxxxxx
+DeviceId2 = xxxxxxx
+DeviceId3 = xxxxxxx

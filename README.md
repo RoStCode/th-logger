@@ -7,6 +7,7 @@ The system currently supports three sensors of three different types.
 The system can also be configured with a function to warn when the weather has been such that there is a high risk of attack of mildew.
 
 Technical facts:
+- Written in National Instruments LabVIEW 14.0.1f3 (32-bit). 
 - TH-Logger was a commercial program 2001-2005 but the source code is now 2017 released free on GitHub.
 - Almost any display can be used but a requirement is that it should have a resolution of 1024x768 pixels.
 - Operating system that can be used is Windows XP SP3 or later.
@@ -14,4 +15,3 @@ Technical facts:
 	- Telldus Live (wireless 433MHz).
 	- Comet Systems NH485 (RS-485).
 	- Rotronic HygroWin (RS-232).
-  

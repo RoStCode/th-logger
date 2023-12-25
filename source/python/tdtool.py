@@ -144,12 +144,12 @@ def doRequest(method, params):
 	consumer = oauth.OAuthConsumer(PUBLIC_KEY, PRIVATE_KEY)
 	token = oauth.OAuthToken(config['token'], config['tokenSecret'])
 
-	oauth_request = oauth.OAuthRequest.from_consumer_and_token(consumer, token=token, http_method='GET', http_url="http://api.telldus.com/json/" + method, parameters=params)
+	oauth_request = oauth.OAuthRequest.from_consumer_and_token(consumer, token=token, http_method='GET', http_url="https://pa-api.telldus.com/json/" + method, parameters=params)
 	oauth_request.sign_request(oauth.OAuthSignatureMethod_HMAC_SHA1(), consumer, token)
 	headers = oauth_request.to_header()
 	headers['Content-Type'] = 'application/x-www-form-urlencoded'
 
-	conn = httplib.HTTPConnection("api.telldus.com:80")
+	conn = httplib.HTTPSConnection("pa-api.telldus.com")
 	conn.request('GET', "/json/" + method + "?" + urllib.urlencode(params, True).replace('+', '%20'), headers=headers)
 
 	response = conn.getresponse()
@@ -158,14 +158,14 @@ def doRequest(method, params):
 def requestToken():
 	global config
 	consumer = oauth.OAuthConsumer(PUBLIC_KEY, PRIVATE_KEY)
-	request = oauth.OAuthRequest.from_consumer_and_token(consumer, http_url='http://api.telldus.com/oauth/requestToken')
+	request = oauth.OAuthRequest.from_consumer_and_token(consumer, http_url='https://pa-api.telldus.com/oauth/requestToken')
 	request.sign_request(oauth.OAuthSignatureMethod_HMAC_SHA1(), consumer, None)
-	conn = httplib.HTTPConnection('api.telldus.com:80')
+	conn = httplib.HTTPSConnection('pa-api.telldus.com')
 	conn.request(request.http_method, '/oauth/requestToken', headers=request.to_header())
 
 	resp = conn.getresponse().read()
 	token = oauth.OAuthToken.from_string(resp)
-	print 'Open the following url in your webbrowser:\nhttp://api.telldus.com/oauth/authorize?oauth_token=%s\n' % token.key
+	print 'Open the following url in your webbrowser:\nhttps://pa-api.telldus.com/oauth/authorize?oauth_token=%s\n' % token.key
 	print 'After logging in and accepting to use this application run:\n%s --authenticate' % (sys.argv[0])
 	config['requestToken'] = str(token.key)
 	config['requestTokenSecret'] = str(token.secret)
@@ -175,9 +175,9 @@ def getAccessToken():
 	global config
 	consumer = oauth.OAuthConsumer(PUBLIC_KEY, PRIVATE_KEY)
 	token = oauth.OAuthToken(config['requestToken'], config['requestTokenSecret'])
-	request = oauth.OAuthRequest.from_consumer_and_token(consumer, token=token, http_method='GET', http_url='http://api.telldus.com/oauth/accessToken')
+	request = oauth.OAuthRequest.from_consumer_and_token(consumer, token=token, http_method='GET', http_url='https://pa-api.telldus.com/oauth/accessToken')
 	request.sign_request(oauth.OAuthSignatureMethod_HMAC_SHA1(), consumer, token)
-	conn = httplib.HTTPConnection('api.telldus.com:80')
+	conn = httplib.HTTPSConnection('pa-api.telldus.com')
 	conn.request(request.http_method, request.to_url(), headers=request.to_header())
 
 	resp = conn.getresponse()
@@ -262,5 +262,5 @@ def main(argv):
 			doMethod(arg, TELLSTICK_DOWN)
 
 if __name__ == "__main__":
-	config = ConfigObj(os.environ['HOMEPATH'] + '/Telldus/tdtool.conf')
+	config = ConfigObj(os.environ['HOME'] + '/Telldus/tdtool.conf')
 	main(sys.argv[1:])

@@ -1,0 +1,16 @@
+The script tdtool.py requires python 2.7.18 with some packages installed
+------------------------------------------------------------------------
+py -2 -m pip list
+
+Package    Version
+---------- -------
+configobj  5.0.8
+oauth      1.0.1
+pip        20.3.4
+setuptools 41.2.0
+six        1.16.0
+
+Update pip and install the following packages:
+py -2 -m pip install --upgrade pip
+py -2 -m pip install configobj
+py -2 -m pip install oauth
